@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import axios from "axios";
+
+import "./App.css";
+import "./icons.css";
+
+import Weather from "./Weather";
+import Search from "./Search";
+import Location from "./Location";
+import Today from "./Today";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Weather />
       </header>
+
+      <Search />
+      <Location />
+      <Today />
+      <Forecast />
+      <Footer />
     </div>
   );
 }
