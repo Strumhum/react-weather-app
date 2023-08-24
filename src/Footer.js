@@ -6,15 +6,15 @@ export default function Footer() {
     <div className="Footer">
       <div className="coded-by">
         <small>
+          This project was coded by Sue McMillan and is{" "}
           <a
             href="https://github.com/Strumhum/weather-app"
             target="_blank"
             rel="noreferrer"
           >
-            Open Source Code
+            open-sourced on GitHub
           </a>
-          by Sue McMillan using React, HTML, CSS, Bootstrap and Openweather &
-          Geolocation APIs.
+          .
         </small>
       </div>
     </div>

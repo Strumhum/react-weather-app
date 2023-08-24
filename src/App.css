@@ -48,7 +48,7 @@ h4 {
 /*.city-search {
   padding-bottom: 20px;
 } */
-.location-button {
+.Location .location-button {
   margin: 10px 0 20px 0;
   padding: 7px 20px;
   background: #00bbf0;
@@ -57,17 +57,17 @@ h4 {
   border-radius: 6px;
   cursor: pointer;
 }
-.location-button:hover {
+.Location .location-button:hover {
   background: #02acdb;
   transition: all 150ms ease-in-out;
 }
-.main-temp {
+.Today .main-temp {
   font-size: 75px;
   margin-top: 30px;
   padding: 0 30px;
   color: #005792;
 }
-.main-high-low {
+.Today .main-high-low {
   padding: 0 30px;
   color: #005792;
 }
@@ -86,24 +86,24 @@ h4 {
 .day {
   text-align: center;
 }
-.coded-by {
+.Footer .coded-by {
   padding-top: 30px;
   text-align: center;
   font-size: 13px;
   color: dimgrey;
 }
-.form-control {
+.Search .form-control {
   border: 1px solid rgb(172, 172, 172);
   cursor: pointer;
 }
-.main-graphic:before {
+.Today .main-graphic:before {
   font-size: 170px;
   color: #00bbf0;
 }
 .weather-graphic {
   padding-right: 0;
 }
-.high-temp {
+.Today .high-temp {
   font-weight: bold;
 }
 
