@@ -1,4 +1,5 @@
 import React from "react";
+import Search from "./Search";
 import "./App.css";
 import "./icons.css";
 
