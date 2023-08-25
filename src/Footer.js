@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./Weather.css";
 
 export default function Footer() {
   return (
