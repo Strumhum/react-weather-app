@@ -89,7 +89,7 @@ h4 {
   border: 1px solid rgb(172, 172, 172);
   cursor: pointer;
 }
-.Weather .main-graphic:before {
+.Weather .MainIcon:before {
   font-size: 170px;
   color: #00bbf0;
 }
@@ -138,7 +138,6 @@ h4 {
 }
 .icon-wi_mostly-sunny:before {
   content: "\e90c";
-  font-size: 85px;
 }
 .icon-wi_low-temp:before {
   content: "\e90d";
@@ -160,7 +159,6 @@ h4 {
 }
 .icon-wi_partly-sunny:before {
   content: "\e913";
-  font-size: 85px;
 }
 .icon-wi_rain:before {
   content: "\e914";

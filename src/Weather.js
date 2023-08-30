@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherToday from "./WeatherToday";
+
 import "./Weather.css";
 import "./icons.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [weatherDescription, setWeatherDescription] = useState("");
 
   function displayWeather(response) {
     setWeatherData({
@@ -16,27 +18,27 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: ``,
       description: response.data.weather[0].main,
+      weatherDescription: response.data.weather[0].main,
       city: response.data.name,
       mainHighTemp: response.data.main.temp_max,
       mainLowTemp: response.data.main.temp_min,
     });
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    search();
-  }
-
-  function updateCity(event) {
-    setCity(event.target.value);
-  }
-
   function search() {
     const apiKey = `66704d6e2b630aa672201ea21ee8f291`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search(city);
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
   }
 
   if (weatherData.ready) {
@@ -83,6 +85,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return "Loading weather...";
   }
 }

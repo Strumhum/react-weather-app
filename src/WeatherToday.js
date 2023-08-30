@@ -1,6 +1,6 @@
 import React from "react";
-import Weather from "./Weather";
 import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 import MinTemp from "./MinTemp";
 import MaxTemp from "./MaxTemp";
@@ -21,7 +21,9 @@ export default function WeatherToday(props) {
           <p>Wind: {props.data.wind} km/h</p>
         </div>
         <div className="col-sm-3 weather-graphic">
-          <i className="main-graphic icon-wi_sunny">{props.iconUrl}</i>
+          <i className="MainIcon">
+            <WeatherIcon weatherDescription={props.data.weatherDescription} />
+          </i>
         </div>
         <div className="todaytemp col-sm-4">
           <div className="main-temp">
