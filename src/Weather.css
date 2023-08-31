@@ -59,6 +59,17 @@ h4 {
   padding: 0 30px;
   color: #005792;
 }
+
+.WeatherTemperature .unit {
+  font-size: 28px;
+  vertical-align: top;
+  line-height: 75px;
+}
+
+.WeatherTemperature .unit a {
+  color: #fdb44b;
+}
+
 .WeatherToday .main-high-low {
   padding: 0 30px;
   color: #005792;

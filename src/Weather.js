@@ -72,7 +72,7 @@ export default function Weather(props) {
 
         <div className="Location">
           <div className="row location">
-            <div className="col-sm-4">
+            <div className="col-sm-12 d-inline-flex justify-content-between align-items-center">
               <button className="location-button">
                 ▹ Use my current location
               </button>
