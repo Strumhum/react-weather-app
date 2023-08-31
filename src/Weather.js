@@ -8,7 +8,7 @@ import "./icons.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-  const [weatherDescription, setWeatherDescription] = useState("");
+  // const [weatherDescription, setWeatherDescription] = useState("");
 
   function displayWeather(response) {
     setWeatherData({
