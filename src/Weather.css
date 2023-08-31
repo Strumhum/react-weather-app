@@ -75,7 +75,7 @@ h4 {
   color: #005792;
   font-size: 16px;
 }
-.forecast {
+.WeatherForecast {
   margin: 30px 0 0 0;
   display: flex;
   justify-content: space-evenly;
@@ -83,13 +83,11 @@ h4 {
   max-width: 800px;
   color: #005792;
 }
-.forecast i {
+.WeatherForecast i {
   font-size: 85px;
   padding: 10px 0;
 }
-.day {
-  text-align: center;
-}
+
 .Footer .coded-by {
   padding-top: 30px;
   text-align: center;
@@ -111,6 +109,13 @@ h4 {
   font-weight: bold;
 }
 
+.WeatherForecast .MaxTemp {
+  font-weight: bold;
+}
+.WeatherForecast .MinTemp {
+  margin-left: 8px;
+}
+
 /* icons */
 .icon-wi_barometer:before {
   content: "\e900";
@@ -126,7 +131,6 @@ h4 {
 }
 .icon-wi_drizzle:before {
   content: "\e904";
-  font-size: 85px;
 }
 .icon-wi_eclipse:before {
   content: "\e905";
@@ -136,7 +140,6 @@ h4 {
 }
 .icon-wi_hail:before {
   content: "\e907";
-  font-size: 85px;
 }
 .icon-wi_lightning:before {
   content: "\e909";
@@ -173,7 +176,6 @@ h4 {
 }
 .icon-wi_rain:before {
   content: "\e914";
-  font-size: 85px;
 }
 .icon-wi_rainbow:before {
   content: "\e915";
@@ -195,7 +197,6 @@ h4 {
 }
 .icon-wi_sunny:before {
   content: "\e91c";
-  font-size: 85px;
 }
 .icon-wi_sunrise:before {
   content: "\e91d";
