@@ -75,7 +75,7 @@ h4 {
   color: #005792;
   font-size: 16px;
 }
-.WeatherForecast {
+.WeatherForecastDay {
   margin: 30px 0 0 0;
   display: flex;
   justify-content: space-evenly;
@@ -86,6 +86,17 @@ h4 {
 .WeatherForecast i {
   font-size: 85px;
   padding: 10px 0;
+}
+
+.WeatherForecast .ForecastDay {
+  text-align: center;
+}
+
+.WeatherForecast .MaxTemp {
+  font-weight: bold;
+}
+.WeatherForecast .MinTemp {
+  margin-left: 8px;
 }
 
 .Footer .coded-by {
@@ -107,13 +118,6 @@ h4 {
 }
 .WeatherToday .MaxTemp {
   font-weight: bold;
-}
-
-.WeatherForecast .MaxTemp {
-  font-weight: bold;
-}
-.WeatherForecast .MinTemp {
-  margin-left: 8px;
 }
 
 /* icons */
